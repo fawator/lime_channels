@@ -1,60 +1,104 @@
+body {
+margin: 0;
+background-color: #b4eb7c;
+}
+
+.img{
+
+}
 .screen {
-  background-image: linear-gradient(to bottom, rgb(94, 94, 94),rgb(87, 245, 106));
-  width: 100%;
-  height: 100%;
+ height: 100%;
 }
 
 .channels {
-  margin:0% 10% 0% 10%;
-  /* padding: 15px; */
-  font-family: 'Roboto Condensed', sans-serif;
-  /* background-image: linear-gradient(to bottom, rgb(94, 94, 94),rgb(87, 245, 106)); */
-
+ 
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  height: 90%;
 
   display: grid;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 10%;
-grid-row-gap: 6%;
-
-
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
 
 
 }
 .channels__single {
-border: 6px white solid;
-border-radius: 3px;
-background-color: #88ff43;
+  border: solid 5px #4b9500;
+  background-color: rgb(227, 241, 223);
+  border-radius: 12px;
 
 }
+
+.channels__programm {
+  font-family: 'Lunasima', sans-serif;
+  position: relative;
+  top: 2%;
+  right: 0;
+  bottom: 50%;
+  left: 25%;
+}
+
+.ch1{grid-area: 1 / 1 / 2 / 2;}
+.ch2{grid-area: 1 / 2 / 2 / 3;}
+.ch3{grid-area: 1 / 3 / 2 / 4;}
+.ch4{grid-area: 2 / 1 / 3 / 2;}
+.ch5{grid-area: 2 / 2 / 3 / 3;}
+.ch6{grid-area: 2 / 3 / 3 / 4;}
+.ch7{grid-area: 3 / 1 / 4 / 2;}
+.ch8{grid-area: 3 / 2 / 4 / 3;}
+.ch9{grid-area: 3 / 3 / 4 / 4;}
+.ch10{grid-area: 4 / 1 / 5 / 2;}
+.ch11{grid-area: 4 / 2 / 5 / 3;}
+.ch12{grid-area: 4 / 3 / 5 / 4;}
+
 .channels__logo {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 5% 5% 0 5%;
 
 }
 .channels__name {
-  font-size: 15px;
-}
-.channels__programm {
-  font-size: 15px;
+  font-family: 'Lunasima', sans-serif;
+  position: relative;
+  top: 2%;
+  right: 0;
+  bottom: 50%;
+  left: 25%;
 }
 
-
-.ch1{
-
-}
 .navigation{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 500px;
-grid-row-gap: px;
 }
 
 .arrow_left {
-  grid-area: 2 / 1 / 3 / 2;
+  max-width: 256px;
+  max-height: 256px;
+  position: absolute;
+  top: 10%;
+  right: 80%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
 }
 .arrow_right {
- grid-area: 2 / 2 / 3 / 3;
+  max-width: 256px;
+  max-height: 256px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  left: 80%;
+  z-index: 1;
+  margin: auto;
 }
